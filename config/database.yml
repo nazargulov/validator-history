@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: VALIDATOR_HISTORY_production
-  username: VALIDATOR_HISTORY
-  password: <%= ENV["VALIDATOR_HISTORY_DATABASE_PASSWORD"] %>
+  database: <%= ENV["UMEE_DB_NAME"] %>
+  username: <%= ENV["UMEE_DB_USER"] %>
+  password: <%= ENV["UMEE_DB_PASSWORD"] %>
