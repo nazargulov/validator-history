@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VALIDATORHistory</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  </head>
+
+  <!--<body>
+    <main class="container mx-auto mt-28 px-5 flex">
+      <%= yield %>
+    </main>
+  </body>
+  -->
+
+  <!-- This example requires Tailwind CSS v2.0+ -->
+  <!--
+    This example requires updating your template:
+
+    ```
+    <html class="h-full bg-gray-100">
+    <body class="h-full">
+    ```
+  -->
+  <body>
+    <div class="min-h-full">
+      <nav class="bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                <img class="h-8 w-8" src="/logo.svg" alt="Workflow">
+              </div>
+              <!-- <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                  <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Dashboard</a>
+
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
+
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
+
+                  <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Reports</a>
+                </div>
+              </div>
+              -->
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+          <!-- Replace with your content -->
+          <div class="px-4 py-6 sm:px-0">
+            <%= yield %>
+          </div>
+          <!-- /End replace -->
+        </div>
+      </main>
+    </div>
+  </body>
+
+</html>

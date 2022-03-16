@@ -1,6 +1,9 @@
 *.rbc
 capybara-*.html
 .rspec
+.idea
+log
+tmp
 /db/*.sqlite3
 /db/*.sqlite3-journal
 /db/*.sqlite3-[0-9]*

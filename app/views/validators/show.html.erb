@@ -1,0 +1,21 @@
+<div>
+  <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="<%= @validator.avatar %>" alt=""/>
+  <%= @validator.moniker %>
+  <%= "| rank #{@validator.rank.to_s}" %>
+</div>
+<hr/>
+<div class="grid grid-cols-2 gap-4">
+  <% @telegram_messages.each do |message| %>
+    <% next unless message.text.present? %>
+    <div>
+      <%= link_to("https://t.me/Umee_russian/#{message.message_id}") do %>
+        <%= message.text %>
+      <% end %>
+    </div>
+    <div>
+      <%= link_to("https://t.me/Umee_russian/#{message.id}") do %>
+        <%= message.date.to_formatted_s(:db) %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
